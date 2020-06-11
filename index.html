@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link id="codyframe" rel="stylesheet" href="assets/css/style.css">
+  <!-- browsers not supporting CSS variables -->
+  <script>
+    if(!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {var cfStyle = document.getElementById('codyframe');if(cfStyle) {var href = cfStyle.getAttribute('href');href = href.replace('style.css', 'style-fallback.css');cfStyle.setAttribute('href', href);}}
+  </script>
+  <title>Title</title>
+</head>
+<body>
+  
+  <section class="padding-y-lg">
+    <div class="container max-width-sm bg-contrast-higher color-bg padding-md">
+      <article class="text-component line-height-lg v-space-md">
+        <h1 class="color-inherit">Hey !</h1>
+
+        <button class="btn btn--primary" aria-controls="modal-name-1">click me Usher !</button>
+      </article>
+    </div>
+  </section>
+
+
+  
+
+  <div class="modal modal--animate-scale flex flex-center bg-contrast-higher bg-opacity-90% padding-md js-modal" id="modal-name-1">
+    <div class="modal__content width-100% max-width-xs bg radius-md shadow-md" role="alertdialog" aria-labelledby="modal-title-1" aria-describedby="modal-description-1">
+      <div class="card">
+        <figure class="card__img">
+          <img src="https://pbs.twimg.com/media/A7LqNxtCAAImUZB.jpg" alt="Card preview img">
+        </figure>
+      
+        <div class="card__content">
+          <div class="text-component">
+            <h4>Title of the Card</h4>
+            <p class="text-sm color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, suscipit.</p>
+          </div>
+          
+          <div class="margin-top-sm">
+            <a class="btn btn--subtle btn--sm" href="#0">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <button class="reset modal__close-btn modal__close-btn--outer display@md js-modal__close js-tab-focus">
+      <svg class="icon icon--sm" viewBox="0 0 24 24">
+        <title>Close modal window</title>
+        <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2">
+          <line x1="3" y1="3" x2="21" y2="21" />
+          <line x1="21" y1="3" x2="3" y2="21" />
+        </g>
+      </svg>
+    </button>
+  </div>
+
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/usher.js"></script>
+</body>
+</html>
